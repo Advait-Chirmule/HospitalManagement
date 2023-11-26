@@ -1,0 +1,45 @@
+table td{
+    border: 3px solid rgb(100, 0, 0);
+    padding: 5px;
+}
+
+table th{
+    border: 3px solid rgb(100, 0, 0);
+    background-color: rgb(255, 130, 130);
+    text-align: center;
+    padding: 5px;
+}
+
+table td:nth-child:not(.nostyle)(odd){
+    background-color: rgb(255, 220, 220);
+}
+
+table td:nth-child:not(.nostyle)(even){
+    background-color: rgb(255, 200, 200);
+}
+
+.center1{
+    text-align: center;
+}
+
+.money{
+    text-align: right;
+}
+
+.mainbody{
+    margin: 40px;
+    background-color: rgb(255, 235, 235);
+    padding: 20px;
+}
+
+.nostyle{
+    border: 0px;
+    background-color: rgb(255, 235, 235);
+    text-align: center;
+    padding: 10px;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}

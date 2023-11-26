@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Icon.png">
+    <title>Hospital Management System</title>
+</head>
+
+<body>
+    <a href="/"><img src="Header.png" width="100%"></a>
+    <div class="mainbody">
+        Welcome to the page! This is a small project which is built using MongoDB and Node JS which creates
+        a Hospital Management System. The front-end is constructed using HTML, CSS and Javascript and is
+        connected to the MongoDB database using Node JS. We can perform the basic CRUD (Create, Read, Update
+        and Delete) operations on our database. Click around everywhere to get a thourough understanding of
+        the page!<br>
+        <br> Note: The "Show Database" button also works as the refresher for the database so please click
+        on it every time you modify the database to reflect all of the changes.<br>
+        <br>Thank you for visiting the website!</br>
+        <div id="show" name="show" class="show">
+            <br><br>Click here to view the database:<br>
+            <button type="button" id="button1" class="btn btn-danger">Show Database</button><br>
+            <br>Click here to add some sample entries in the database:<br>
+            <button type="button" id="button2" class="btn btn-danger">Add Sample Database</button><br>
+            <br>Click here to delete your database (Remember you can't get them back once deleted!)<br>
+            <button type="button" id="button4" class="btn btn-danger">Delete Database</button><br>
+            <br>Enter the values to add to the database:
+        </div>
+        <form action="/" method="post" autocomplete="off">
+            <table>
+                <tr class="nostyle">
+                    <td class="nostyle"><input type="text" name="name1" placeholder="Patient Name"></td>
+                    <td class="nostyle"></td>
+                    <td class="nostyle"><input type="text" name="floor1" placeholder="Floor Number"></td>
+                    <td class="nostyle"></td>
+                    <td class="nostyle"><input type="text" name="room1" placeholder="Room Number"></td>
+                </tr>
+                <tr class="nostyle">
+                    <td class="nostyle"></td>
+                    <td class="nostyle"><input type="text" name="illness1" placeholder="Illness"></td>
+                    <td class="nostyle"></td>
+                    <td class="nostyle"><input type="text" name="cost1" placeholder="Cost">
+                    <td class="nostyle">
+                </tr>
+                <tr class="nostyle">
+                    <td class="nostyle"></td>
+                    <td class="nostyle"></td>
+                    <td class="nostyle"><button type="submit" id="button3" name="button3" value="1"
+                            class="btn btn-danger">Submit</button></td>
+                    <td class="nostyle"></td>
+                    <td class="nostyle">
+                </tr>
+            </table>
+        </form><br><br>
+        <div id="content"></div>
+    </div>
+    <script src="second.js"></script>
+</body>
+
+</html>
